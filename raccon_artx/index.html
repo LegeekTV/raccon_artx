@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bienvenue au musée Guimet, un lieu unique ou la culture asiatique regorge">
+    <title>Musée Guimet</title>
+    <link href="style/reset.css" rel="stylesheet" />
+    <link href="style/index.css" rel="stylesheet" /> 
+    <link href="vendors/splide.min.css" rel="stylesheet">
+    <script src="vendors/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="carrousel2.js"></script>
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+
+    <header>
+        <div class="header_haut">
+            <div class="search">
+                <img src="./images/images_index/loupe_recherche.webp" alt="Loupe de recherche">
+                <input type="search" name="" id="search-input" placeholder="Recherche">
+            </div>
+            <img src="./images/images_index/logo_musee_guimet.webp" alt="logo du musée Guimet">
+            <div class="droite">
+                <a target="_blank" href="https://billetterie.guimet.fr/fr-FR/accueil">
+                    <button class="billeterie_header">
+                        billetterie
+                        <img src="./images/images_index/Tickets.webp" alt="Ticket de billetterie">
+                    </button>
+                </a>
+                <select name="langue">
+                    <option value="fr">
+                        FR
+                    </option>
+                    <option value="en">
+                        EN
+                    </option>
+                    <option value="ES">
+                        ES
+                    </option>
+                </select aria-label="Langues">
+            </div> 
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#musee">Musées</a>
+                </li>
+                <li>
+                    <a href="#actu">Actualités</a>
+                </li>
+                <li>
+                    <a href="#tarifs">Tarifs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+<!-- CAROUSSEL SOUS LE HEADER -->
+
+
+<section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <img src="./images/images_index/pexels-angela-roma-7364196.png" alt="photo de statue">
+                <div class="nbr_page">
+                    <span>1/4</span>  
+                </div>
+            </li>
+            <li class="splide__slide">
+                <img src="./images/images_index/pexels-pixabay-208337.png" alt="photo de statue">
+                <div class="nbr_page">
+                    <span>2/4</span>
+                </div>
+            </li>
+
+            <li class="splide__slide">
+                <img src="./images/images_index/pexels-pierre-miyamoto-12857910.png" alt="photo de statue">
+                <div class="nbr_page">
+                    <span>3/4</span>
+                </div>
+            </li>
+            <li class="splide__slide">
+                <img src="./images/images_index/pexels-angela-roma-7364196.png" alt="photo de statue">
+                <div class="nbr_page">
+                    <span>4/4</span>
+                </div>
+            </li>
+        </ul>
+        <div class="horaire">
+            <a class="horaire" href="#horaires">VOIR LES HORAIRES DU MUSEE</a>
+            <img src="./images/images_index/Flèche_bouton.webp" alt="flèche vers la droite">  
+        </div>  
+    </div>
+    <a href="https://billetterie.guimet.fr/fr-FR/accueil">
+        <button class="billeterie_carroussel">
+            billetterie
+            <img src="./images/images_index/Tickets.webp" alt="Ticket de billetterie">
+        </button>
+    </a>      
+</section>
+<script>
+    new Splide( '.splide' ).mount();
+</script>
+
+
+
+<!-- INTRODUCTION  -->
+
+<section>
+    <div class="container-intro">
+        <h1>Bienvenue au Musée Guimet, Musée national des arts asiatiques à Paris. </h1>
+
+
+        <p class="introduction"> Au <strong>Musée Guimet</strong> de Bordeaux, nous sommes impatients de partager avec vous notre passion pour
+            l'Asie et de vous accueillir
+            dans un espace dédié à la <strong>célébration de la diversité</strong> culturelle et artistique de ce continent fascinant.
+            Nous espérons que votre visite sera une expérience inoubliable,
+            empreinte de <strong>beauté</strong>, de <strong>sagesse</strong> et de <strong>découvertes</strong>.
+        </p>
+
+
+        <p class="introduction">Notre organisation dédiée à la préservation et à la promotion de l'<strong>art asiatique</strong> a pour mission de vous
+            transporter dans un voyage captivant à travers les siècles, les cultures et les régions d'Asie. Grâce à nos
+            <strong>collections impressionnantes</strong>, nous offrons un aperçu unique des réalisations artistiques, religieuses et culturelles de
+            ce vaste continent.
+        </p>
+    </div>
+</section>
+
+<!-- A LA UNE /carousselle -->
+
+<section>
+    <h2>À LA UNE</h2>
+    <main>
+
+        <div id="carousel">
+    
+           <div class="selected">
+            <img src="images/images_index/portraits_japon.webp" alt="fenêtre avec personne endormie">
+            <div class="carousel-text">
+                <h3>Portrait éphémère du Japon</h3>
+                <p>Prolongeant un travail photographique anthropologique et social initié en 2016 à Cuba et qu’il poursuivra en 2024 en Israël, Pierre-Elie de Pibrac (né en 1983) a sillonné le Japon entre décembre 2019 et août 2020 pour réaliser la série Hakanai Sonzai (« je me sens moi-même une créature éphémère »).</p>
+
+                <a href="x">
+                    <button class="decouvrir">
+                        <p>Decouvrir</p>
+                    </button>
+                </a>
+
+            </div>
+          </div>
+    
+          <div class="next">
+            <img src="images/images_index/Prince_Genji.webp" alt="peinture ancienne asiatique">
+            <div class="carousel-text">
+                <h3>À la cour du Prince Genji</h3>
+                <p>Célèbre pour le raffinement extrême de son art de cour,
+                    le Japon impérial de l’époque de Heian (794-1185) a notamment donné naissance à une œuvre majeure de la littérature classique japonaise, le Dit du Genji. Écrit au 11e siècle par une femme, la poétesse Murasaki Shikibu, il a généré depuis mille ans une iconographie extrêmement riche, influençant jusqu’aux mangaka contemporains.</p>
+                    <a href="x">
+                        <button class="decouvrir">
+                            <p>Decouvrir</p>
+                        </button>
+                    </a>
+            </div>
+          </div>
+    
+          <div class="nextRightSecond">
+            <img src="images/images_index/Manish_Pushkale.webp" alt="Le Manish Pushkale ">
+            <div class="carousel-text">
+                <h3>Carte blanche à Manish Pushkale</h3>
+                <p>Créée par l’artiste indien à l’invitation du musée Guimet, l’œuvre s’inspire d’une histoire réelle : celle de l’extinction du langage aka-bo parlé par la tribu Bo sur l’archipel d’Andaman (Inde), également appelé « chant des oiseaux ». Conçue comme un voyage initiatique où se mêlent l’écriture, l’archéologie et la sensation fugace du souvenir.</p>
+                <a href="x">
+                    <button class="decouvrir">
+                        <p>Decouvrir</p>
+                    </button>
+                </a>
+                </div>
+          </div>
+    
+          <div class="hideRight">
+            <img src="images/images_index/tadjik.webp" alt="deux personnes, sur un fond bleutée ">
+            <div class="carousel-text">
+                <h3>Voyage en cinéma tadjik !</h3>
+                <p>Du 27 octobre au 5 novembre, le Tadjikistan est à l’honneur au musée Guimet avec une rétrospective qui éclaire le parcours cinématographique du Tadjikistan, de l’époque soviétique à la renaissance post-guerre civile, illustrant un siècle de transformations sociales et artistiques.
+                </p>
+                
+                <a href="x">
+                    <button class="decouvrir">
+                        <p>Decouvrir</p>
+                    </button>
+                </a>
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="buttons">
+            <button id="prev" aria-label="avant" onclick="onPrevClick()">
+                <i class='bx bx-chevron-left' ></i>
+            </button>
+            <button id="next" aria-label="après" onclick="onNextClick()">
+                <i class='bx bx-chevron-right' ></i>
+            </button>
+        </div>
+</section>
+
+
+<!-- EVENEMENTS  -->
+
+
+<section class="evenements">
+    <h2>Evènements</h2>
+    <div class="events-list">
+        <article >
+            <div class="cinema" >
+                <img src="./images/images_index/icone_cinema.webp" alt="icone cinéma">
+                <h3>Cinéma</h3>
+            </div>
+            <a target=”_blank” href="https://www.guimet.fr/evenements/cinema/">
+                <button class="cinema_button">
+                    <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+                </button>  
+            </a>  
+    </article>
+
+    <article>
+        <div class="cinema">
+            <img src="./images/images_index/icone_spectacles.webp" alt="icone spectacle">
+            <h3>Spectacles</h3>
+        </div>
+        <a target=”_blank” href="https://www.guimet.fr/evenements/spectacles/">
+            <button class="cinema_button">
+                <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+            </button>
+        </a>
+    </article>
+
+    <article>
+        <div class="cinema">
+            <img src="./images/images_index/icone_prix.webp" alt="icone prix">
+            <h3 >Prix</h3>
+        </div>
+        <a target=”_blank” href="https://www.guimet.fr/prix-litteraire/">
+            <button class="cinema_button">
+                <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+            </button>  
+        </a>
+    </article>
+
+    <article>
+        <div class="cinema">
+            <img src="./images/images_index/icone_lecture.webp" alt="icone lectures">
+            <h3>Lectures</h3>
+        </div>
+        <a target=”_blank” href="https://www.guimet.fr/events/categorie/cycle-de-lectures/">
+            <button class="cinema_button">
+                <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+            </button>  
+        </a>
+
+    </article>
+    <article>
+        <div class="cinema">
+            <img src="./images/images_index/icone_rendez_vous.webp" alt="icone rendez vous">
+            <h3>Rendez-Vous</h3>
+        </div>
+            <a target=”_blank” href="https://www.guimet.fr/evenements/rendez-vous/">
+                <button class="cinema_button">
+                    <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+                </button>  
+            </a>
+    </article>
+    <div class="all-events-block">
+
+        <button class="all_events_button">
+            <span>
+                Découvrir tous les évènemments
+            </span>
+
+            <a href="https://www.guimet.fr/publications/autour-des-collections/" target="_blank"> 
+                    <img src="./images/images_index/Flèche_bouton.webp" alt="flèche vers la droite">
+            </a>
+        </button> 
+    </div>
+    </div>
+
+</section>
+
+    
+<!-- NOS MUSEES  -->
+
+<section class="museum">
+    <h2 class="wight">Nos musées</h2>*
+
+    <article class="Guimet">
+        <div class="texte1">
+            <img src="./images/images_index/musee_guimet.webp" alt="musée Guimet">
+            <div class="container-text-museum-right">
+                <h3 class="wight">Musée Guimet</h3>
+                <p class="wight text-museum">Le musée Guimet est né du grand projet d’un industriel lyonnais, <strong>Émile Guimet</strong> (1836-1918), de créer un <strong> musée des religions</strong> de l’ <strong>Égypte</strong>, de l’ <strong>antiquité classique</strong> et des pays d’ <strong>Asie</strong>. </p>
+                <p class="wight text-museum">Des <strong>voyages</strong> en Égypte, en Grèce, puis un <strong>tour du monde</strong> en 1876, avec des étapes au Japon, en Chine et en Inde lui permirent de réunir d’importantes <strong>collections</strong> qu’il présenta à Lyon à partir de 1879. </p>
+                <p class="wight text-museum">Il devait par la suite <strong>transférer</strong> ses collections dans un musée qu’il fit construire à Paris et qui fut inauguré en 1889. </p>
+                <p class="wight text-museum">Du vivant même d’Emile Guimet cette institution se <strong>consacra</strong> de plus en plus à l’Asie, tout en conservant une section sur les religions de l’ancienne Égypte, à la suite des expéditions dans diverses régions de l’Extrême-Orient.</p>
+            </div>
+        </div>
+        <a href="collection_himalaya.html#himalaya">
+            <button>En savoir plus <img src="./images/images_index/bouton_plus.png" alt="bouton plus"></button>
+        </a>
+    </article>
+    <article>
+        <div class="texte2">
+            <div class="container-text-museum-right">
+                <h3 class="wight">Hôtel d'Heidelbach</h3>
+                <p class="wight text-museum"><strong>Alfred Samuel Heidelbach</strong> profite peu de sa résidence, il meurt en 1922. Une partie de ses collections est cédée au <strong>musée des Arts décoratifs</strong>, le reste est dispersé en <strong>vente publique</strong> après la mort de Julie Picard. <strong>Six cent cinq</strong> pièces rejoignent en 1934 le musée des Arts décoratifs, <strong>cent trente-neuf</strong> pièces chinoises et <strong>quarante-cinq</strong> d’origine européenne sont laissées aux héritiers.</p>
+                <p class="wight text-museum">Le bâtiment est acheté par la <strong>Caisse des dépôts</strong> en 1939. Pendant l’occupation, l’hôtel d’Heidelbach sert de <strong>caserne</strong> aux ordonnances de l’hôtel Majestic. </p>
+                <p class="wight text-museum">En 1947, la direction des Musées de France prend enfin <strong>possession</strong> de l’immeuble. Le bâtiment, acquis par le ministère de l’Éducation nationale en 1955, a été finalement <strong>attribué au musée Guimet</strong> et rénové en 1991. </p>
+                <p class="wight text-museum">Lors de la rénovation est <strong>inauguré</strong> le Panthéon bouddhique, souhaité par Émile Guimet, et en 2001, l’hôtel est enrichi d’un authentique Pavillon de thé dressé à l’arrière du bâtiment, dans le jardin de style japonais.
+                </p>
+            </div>
+            <img src="./images/images_index/hotel_heildelbach.webp" alt="hotel d'heildelbach">
+        </div>
+        <a href="collection_himalaya.html#himalaya">
+            <button>En savoir plus <img src="./images/images_index/bouton_plus.png" alt="bouton plus"></button>
+        </a>
+    </article>
+    <article>
+        <div class="texte3">
+            <img src="./images/images_index/image 66.webp" alt="musée d'ennery">
+            <div class="container-text-museum-right">
+                <h3 class="wight">Musée d'Ennery</h3>
+                <p class="wight text-museum">Le musée d’Ennery, situé au 59 de l’avenue Foch, anciennement avenue du Bois de Boulogne, constitue en lui-même le lieu d’une <strong>déclinaison spécifique</strong> de ce goût pour l’Extrême-Orient tel qu’il se manifeste en Europe au cours du dernier tiers du xixe siècle. </p>
+                <p class="wight text-museum">Il offre, aux côtés du musée national des arts asiatiques – Guimet, un <strong>autre reflet de l’histoire</strong> de notre rencontre avec les expressions esthétiques et culturelles d’un continent décidément inspirateur de collections insignes et d’études appelées à de vastes <strong>développements</strong>.</p>
+                <p class="wight text-museum">L’histoire qui y est évoquée, en un lieu bâti pour <strong>abriter ces collections</strong> singulières, dont nul ajout, par dispositions testamentaires, ne vint briser l’homogénéité, relève autant de l’histoire littéraire et de l’évolution du goût esthétique en France que de l’écriture d’une page précise de l’histoire de l’art.</p>
+            </div>
+        </div>
+        <a href="collection_himalaya.html#himalaya">
+            <button>En savoir plus <img src="./images/images_index/bouton_plus.png" alt="bouton plus"></button>
+        </a>
+    </article>       
+</section>
+
+<!-- RESTAURANT  -->
+
+
+<section class="restaurant">
+
+    <h2>Restaurant</h2>
+
+    <div class="container-1">
+
+        <div class="restaurant-informations">
+
+            <h3>LOCALISATION </h3>
+            <p>Le restaurant du musée Guimet est situé au 6 place d’Iéna, au rez-de-jardin.</p>
+            
+            <h3>ACCES</h3>
+            <p>L’accès au restaurant est soumis à un titre d’accès</p>
+
+            <h3>HORAIRES :</h3>
+            <p>Tous les jours sauf le mardi, de 10h à 18h.</p>
+
+            <h3>CONTACT :</h3>
+            <p>Tél. : <a target="_blank" href="tel:+33147235803"> 01 47 23 58 03</a></p>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- NOUS SOUTENIR -->
+
+<section class="sustainus container">
+
+    <h2 class="title">Nous soutenir</h2>
+    <p class="title-Dev">
+        Développez votre activité en soutenant le musée national des arts asiatiques.
+    </p>
+    <div class="center">
+        <div class="text-SustainUs">
+            <p class="paragraphes-SustainUs">
+                Devenez un partenaire <strong><span class="hide">privilégié</span></strong> du musée<span class="hide">national des arts asiatiques – Guimet en nous <strong>soutenant</strong></span>
+            </p>
+            <p class="paragraphes-SustainUs">
+            <span class="hide"><strong>TPE, PME, grandes entreprises</strong> ou <strong>fondations,</strong></span>votre apport peut faire la différence.
+            </p>
+            <p class="paragraphes-SustainUs">
+                Nous sommes constamment à la <strong>recherche de partenaires</strong> <span class="hide">souhaitant associer leur image à celle du musée, une vitrine de l’Asie en Europe.</span> 
+            </p>
+            <p class="paragraphes-SustainUs">
+                <span class="hide">En devenant mécène du musée,</span> vous bénéficiez d’une <strong>visibilité personnalisée</strong> <span class="hide">sur tous les supports de communication de nos projets aux potentiels hautement artistique et médiatique.</span>
+            </p>
+        </div>
+        <div class="images">
+            <div class="imagestop">
+                <img class="img1 hide" src="./images/images_index/galerie_musee_1.webp" alt="galerie du musée Guimet">
+                <img class="img2"src="./images/images_index/galerie_musee_3.webp" alt="galerie du musée Guimet">
+            </div>
+            <div class="imagesbottom">
+                <img class="img3"src="./images/images_index/facade_musee.webp" alt="façade du musée Guimet">
+                <img class="img4 hide"src="./images/images_index/galerie_musee_2.webp" alt="galerie du musée Guimet">
+            </div>
+            
+        </div>
+    </div>
+    <a target="_blank" href="https://www.guimet.fr/soutenir-le-musee/">
+        <button> 
+            <span>Nous Soutenir</span> 
+            <img src="./images/images_index/Flèche_bouton.webp" alt="flèche vers la droite">
+        </button>
+    </a>
+ </section>
+
+    
+<!-- COMMENT S'Y RENDRE  -->
+
+<section>
+    <h2 >Comment s'y rendre</h2>
+    <div class="centermap">
+        <div class="map-container">
+            <div class="map">
+                <iframe title="Hôtel d'Heidelbach adresse"    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5732316437834!2d2.291853375516574!3d48.86634790014774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f3769d4edf1%3A0x3422bcfeaa5d137e!2sH%C3%B4tel%20d&#39;Heidelbach!5e0!3m2!1sfr!2sfr!4v1697704568447!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <address>
+                <p><strong>Hôtel d'Heidelbach</strong></p>
+                <p>Hôtel - 19 Avenue d'Iéna, 75116 Paris</p>
+            </address>
+        </div>
+
+        <div class="map-container">
+            <div class="map">
+                <iframe title="Musée national des arts asiatiques adresse " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.638455158113!2d2.2911149755164635!3d48.86510430023532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe5cd3929c3%3A0xb5ec0412a7bc9c89!2sMus%C3%A9e%20national%20des%20arts%20asiatiques%20-%20Guimet!5e0!3m2!1sfr!2sfr!4v1697704749157!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <address>
+                <p><strong>Musée national des arts asiatiques </strong></p>
+                <p>Guimet, 6 Pl. d'Iéna, 75116 Paris</p>
+            </address>
+        </div>
+
+        <div class="map-container">
+            <div class="map">
+                <iframe title="Musée d'Ennery : "  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2962644388454!2d2.2788043755169194!3d48.871628499776044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff6896afe29%3A0xbacc3c3f8a569659!2sMus%C3%A9e%20d&#39;Ennery!5e0!3m2!1sfr!2sfr!4v1697704958112!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <address>
+                <p><strong>Musée d'Ennery :</strong></p>
+                <p>59, avenue Foch, 75116 Paris</p>
+            </address>
+        </div>
+    </div>
+</section>
+
+
+<!-- scrollUp -->
+
+<div id="scrollUp">
+    <a href="#"><img src="/images/images_index/scrollup.webp" alt="flèche vers le haut"/></a>
+</div>
+
+
+<!-- FOOTER  -->
+
+
+<footer class="site-footer">
+
+    <div class="top">
+
+        <div class="row">
+
+            <div class="horraire">  <!--button-container-->
+                <h4>Horaires : </h4>
+                <br>
+                <p class="text-justify">L’Hôtel d’Heidelbach et Le Jardin Japonais sont ouverts tous les jours sauf le mardi, 
+                    de 10h à 11h30 et de 14h30 à 17h30.
+                </p>
+
+                <br>
+
+                <h4> Accès : </h4>
+                <br>
+                <address class="adress-links">
+                    <p><b>Musée national des arts asiatiques - Guimet :</b></p>
+                    <p>6, place d'Iéna, 75116 Paris</p>
+                    <br>
+                    <p><b>Hôtel d'Heidelbach :</b></p>
+                    <p>19, avenue d’Iéna, 75116 Paris</p>
+                    <br>
+                    <p><b>Musée d'Ennery :</b></p>
+                    <p>59, avenue Foch, 75116 Paris</p>
+                    <br>
+                    <p><b>Information :</b> <a target="_blank" href="tel:+33156525433">01 56 52 54 33</a></p>
+                </address>
+
+                <br>
+                <br>
+                <h4> Mobilité Réduite : </h4>
+                <br>
+                <p>
+                    L’accès se fait par une <b>rampe</b>, située sur la <b>gauche des escaliers</b>.
+                </p>
+                <p>
+                    Pour votre confort, il est préférable de l’emprunter accompagné. Un <b>élévateur et des ascenseurs</b> desservent les différents niveaux des salles du musée.
+                </p>
+                <p>
+                    <b>Deux fauteuils roulants</b> sont à votre disposition à l’accueil du musée, sur simple remise d’une pièce d’identité.
+                </p>
+                <p>
+                    L’hôtel d’Heidelbach, situé au 19 avenue d’Iéna, et le Musée d’Ennery ne sont pas accessibles aux visiteurs à mobilité réduite pour l’instant.
+                </p>
+            </div>
+        </div>
+
+        <address class="social">
+            <div class="single-social">
+                <div class="content">
+                <p>Youtube</p>
+                <a class="youtube"  href="https://www.youtube.com/user/officielmuseeguimet" target="_blank"><i class="bx bxl-youtube"></i> </a>
+                </div>
+            </div>
+
+            <div class="single-social"> 
+                <div class="content">
+                <p>Twitter</p>
+                <a class="twitter" href="https://twitter.com/museeguimet?lang=fr" target="_blank"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+
+
+            <div class="single-social">
+                <div class="content">
+                <p>Facebook</p>
+                <a class="facebook" href="https://www.facebook.com/museeguimet/" target="_blank"><i class="bx bxl-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="single-social">
+                <div class="content">
+                <p>Instagram</p>
+                <a class="instagram" href="https://www.instagram.com/museeguimet/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="space">
+                <p><b>Tel :</b> <a target="_blank" href="Tél:+33156525433"> 01 56 52 54 33 </a> – Pour toutes demandes d’informations pratiques (de 10h à 18h les jours d’ouverture au public)</p>
+                <br>
+                <p><b>Renseignements et réservations de groupes adultes ou scolaires :</b></p>
+            
+                <p><a target="_blank" href="mailto:resa@guimet.fr">  resa@guimet.fr</a></p>
+                <br>
+                <p><b>Informations concernant les activités individuelles : </b></p>
+
+                <p><a target="_blank" href="mailto:resa@guimet.fr">resa@guimet.fr</a></p>
+            </div>
+        </address>
+    </div>
+
+   
+    <div class="bottom">
+
+        <img src="./images/images_index/Logo_musée_Guimet_footer.webp" alt="Logo du musée Guimet">
+        <a target="_blank" href="https://billetterie.guimet.fr/fr-FR/accueil">
+            <button class="billeterie">
+                    billetterie
+                <img src="./images/images_index/Tickets.webp" alt="Tickets e la billeterie">
+            </button>
+        </a>
+        <span class="invisible"></span>
+
+    </div>
+
+    <p class="copyright-text"> Place d’Iéna avec la façade du musée national des arts asiatiques – Guimet &#169; Christian Moutarde – MNAAG – Droits réservés</p>
+    
+
+</footer>
+
+
+
+</body>
+
+</html>
+
+
+
+
