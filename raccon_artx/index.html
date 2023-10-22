@@ -2,14 +2,17 @@
 <html lang="fr">
 
 <head>
+    <!-- meta description -->
     <meta charset="utf-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bienvenue au musée Guimet, un lieu unique ou la culture asiatique regorge">
+    <!-- Titre -->
     <title>Musée Guimet</title>
+    <!-- CSS -->
     <link href="style/reset.css" rel="stylesheet" />
     <link href="style/index.css" rel="stylesheet" /> 
     <link href="vendors/splide.min.css" rel="stylesheet">
+    <!-- JS -->
     <script src="vendors/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="carrousel2.js"></script>
@@ -29,10 +32,10 @@
                 <img src="./images/images_index/loupe_recherche.webp" alt="Loupe de recherche">
                 <input type="search" name="" id="search-input" placeholder="Recherche">
             </div>
-            <img src="./images/images_index/logo_musee_guimet.webp" alt="logo du musée Guimet">
+            <img src="./images/images_index/logo_musee_guimet.webp"  width="307"  height="124" alt="logo du musée Guimet">
             <div class="droite">
-                <a target="_blank" href="https://billetterie.guimet.fr/fr-FR/accueil">
-                    <button class="billeterie_header">
+                <a target="_blank" href="https://billetterie.guimet.fr/fr-FR/accueil" aria-label="billetterie">
+                    <button class="billeterie_header" aria-label="accéder à la billetterie">
                         billetterie
                         <img src="./images/images_index/Tickets.webp" alt="Ticket de billetterie">
                     </button>
@@ -53,13 +56,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#musee">Musées</a>
+                    <a href="#musee" aria-label="Musées">Musées</a>
+                    
                 </li>
                 <li>
-                    <a href="#actu">Actualités</a>
+                    <a href="https://www.guimet.fr/francais/presse/actualites-en/" aria-label="Actualités">Actualités</a>
+                    
                 </li>
                 <li>
-                    <a href="#tarifs">Tarifs</a>
+                    <a href="https://www.guimet.fr/tarifs/" aria-label="Tarifs">Tarifs</a>
+                    
                 </li>
             </ul>
         </nav>
@@ -73,42 +79,42 @@
     <div class="splide__track">
         <ul class="splide__list">
             <li class="splide__slide">
-                <img src="./images/images_index/pexels-angela-roma-7364196.png" alt="photo de statue">
+                <img src="./images/images_index/pexels-angela-roma-7364196.webp" width="1941"  height="1294" alt="photo de statue">
                 <div class="nbr_page">
                     <span>1/4</span>  
                 </div>
             </li>
             <li class="splide__slide">
-                <img src="./images/images_index/pexels-pixabay-208337.png" alt="photo de statue">
+                <img src="./images/images_index/pexels-pixabay-208337.webp" width="2000"  height="1000"  alt="photo de statue">
                 <div class="nbr_page">
                     <span>2/4</span>
                 </div>
             </li>
 
             <li class="splide__slide">
-                <img src="./images/images_index/pexels-pierre-miyamoto-12857910.png" alt="photo de statue">
+                <img src="./images/images_index/pexels-pierre-miyamoto-12857910.webp" width="1940"  height="1293"  alt="photo de statue">
                 <div class="nbr_page">
                     <span>3/4</span>
                 </div>
             </li>
             <li class="splide__slide">
-                <img src="./images/images_index/pexels-angela-roma-7364196.png" alt="photo de statue">
+                <img src="./images/images_index/pexels-angela-roma-7364196.webp" width="1941"  height="1294"  alt="photo de statue">
                 <div class="nbr_page">
                     <span>4/4</span>
                 </div>
             </li>
         </ul>
         <div class="horaire">
-            <a class="horaire" href="#horaires">VOIR LES HORAIRES DU MUSEE</a>
+            <a class="horaire" href="#horaires" aria-label="VOIR LES HORAIRES DU MUSEE">VOIR LES HORAIRES DU MUSEE </a>
             <img src="./images/images_index/Flèche_bouton.webp" alt="flèche vers la droite">  
         </div>  
     </div>
-    <a href="https://billetterie.guimet.fr/fr-FR/accueil">
-        <button class="billeterie_carroussel">
+    <a href="https://billetterie.guimet.fr/fr-FR/accueil" aria-label="billetterie">
+        <button  name="link" class="billeterie_carroussel" aria-label="accès à la billeterie">
             billetterie
             <img src="./images/images_index/Tickets.webp" alt="Ticket de billetterie">
         </button>
-    </a>      
+    </a>       
 </section>
 <script>
     new Splide( '.splide' ).mount();
@@ -139,81 +145,89 @@
     </div>
 </section>
 
-<!-- A LA UNE /carousselle -->
+<!-- A LA UNE /caroussel -->
 
 <section>
     <h2>À LA UNE</h2>
-    <main>
-
+    <main class="container-carousel2">
+<div class="sub-container">
         <div id="carousel">
     
            <div class="selected">
-            <img src="images/images_index/portraits_japon.webp" alt="fenêtre avec personne endormie">
+            <img src="images/images_index/portraits_japon_redi.webp" alt="fenêtre avec personne endormie">
             <div class="carousel-text">
                 <h3>Portrait éphémère du Japon</h3>
-                <p>Prolongeant un travail photographique anthropologique et social initié en 2016 à Cuba et qu’il poursuivra en 2024 en Israël, Pierre-Elie de Pibrac (né en 1983) a sillonné le Japon entre décembre 2019 et août 2020 pour réaliser la série Hakanai Sonzai (« je me sens moi-même une créature éphémère »).</p>
+                <p class="mobile">Prolongeant un travail photographique anthropologique et social initié en 2016 à Cuba et qu’il poursuivra en 2024 en Israël, Pierre-Elie de Pibrac (né en 1983) a sillonné le Japon entre décembre 2019 et août 2020 pour réaliser la série Hakanai Sonzai (« je me sens moi-même une créature éphémère »).</p>
 
-                <a href="x">
+                
+                <a target="_blank" href="https://www.guimet.fr/event/portrait-ephemere-du-japon/" aria-label="Decouvrir cette exposition">
                     <button class="decouvrir">
                         <p>Decouvrir</p>
                     </button>
                 </a>
+                
 
             </div>
           </div>
     
           <div class="next">
-            <img src="images/images_index/Prince_Genji.webp" alt="peinture ancienne asiatique">
+            <img src="images/images_index/Prince_Genji_redi.webp" alt="peinture ancienne asiatique">
             <div class="carousel-text">
                 <h3>À la cour du Prince Genji</h3>
                 <p>Célèbre pour le raffinement extrême de son art de cour,
                     le Japon impérial de l’époque de Heian (794-1185) a notamment donné naissance à une œuvre majeure de la littérature classique japonaise, le Dit du Genji. Écrit au 11e siècle par une femme, la poétesse Murasaki Shikibu, il a généré depuis mille ans une iconographie extrêmement riche, influençant jusqu’aux mangaka contemporains.</p>
-                    <a href="x">
+                    
+                    <a target="_blank" href="https://www.guimet.fr/event/prince-genji/" aria-label="Decouvrir cette exposition">
                         <button class="decouvrir">
                             <p>Decouvrir</p>
                         </button>
                     </a>
+                    
             </div>
           </div>
     
           <div class="nextRightSecond">
-            <img src="images/images_index/Manish_Pushkale.webp" alt="Le Manish Pushkale ">
+            <img src="images/images_index/Manish_Pushkale_redi.webp" alt="Le Manish Pushkale ">
             <div class="carousel-text">
                 <h3>Carte blanche à Manish Pushkale</h3>
                 <p>Créée par l’artiste indien à l’invitation du musée Guimet, l’œuvre s’inspire d’une histoire réelle : celle de l’extinction du langage aka-bo parlé par la tribu Bo sur l’archipel d’Andaman (Inde), également appelé « chant des oiseaux ». Conçue comme un voyage initiatique où se mêlent l’écriture, l’archéologie et la sensation fugace du souvenir.</p>
-                <a href="x">
+                
+                <a target="_blank" href="https://www.guimet.fr/event/bientot-carte-blanche-a-manish-pushkale/" aria-label="Decouvrir cette exposition">
                     <button class="decouvrir">
                         <p>Decouvrir</p>
                     </button>
                 </a>
+                
                 </div>
           </div>
     
           <div class="hideRight">
-            <img src="images/images_index/tadjik.webp" alt="deux personnes, sur un fond bleutée ">
+            <img src="images/images_index/tadjik.webp" alt="deux personnes, sur un fond bleutée " >
             <div class="carousel-text">
                 <h3>Voyage en cinéma tadjik !</h3>
                 <p>Du 27 octobre au 5 novembre, le Tadjikistan est à l’honneur au musée Guimet avec une rétrospective qui éclaire le parcours cinématographique du Tadjikistan, de l’époque soviétique à la renaissance post-guerre civile, illustrant un siècle de transformations sociales et artistiques.
                 </p>
                 
-                <a href="x">
+                <a target="_blank" href="https://www.guimet.fr/event/western-poesie-musique-voyage-en-cinema-tadjik/" aria-label="Decouvrir cette exposition">
                     <button class="decouvrir">
                         <p>Decouvrir</p>
                     </button>
                 </a>
+                
             </div>
           </div>
     
         </div>
     
-        <div class="buttons">
-            <button id="prev" aria-label="avant" onclick="onPrevClick()">
+        <div class="button_carousel2">
+            <button  name="link" id="prev" aria-label="avant" onclick="onPrevClick()">
                 <i class='bx bx-chevron-left' ></i>
             </button>
-            <button id="next" aria-label="après" onclick="onNextClick()">
+            <button  name="link" id="next" aria-label="après" onclick="onNextClick()">
                 <i class='bx bx-chevron-right' ></i>
             </button>
         </div>
+    </div>
 </section>
 
 
@@ -225,71 +239,71 @@
     <div class="events-list">
         <article >
             <div class="cinema" >
-                <img src="./images/images_index/icone_cinema.webp" alt="icone cinéma">
+                <img src="./images/images_index/icone_cinema.webp"  width="60"  height="60" alt="Cinéma">
                 <h3>Cinéma</h3>
             </div>
-            <a target=”_blank” href="https://www.guimet.fr/evenements/cinema/">
-                <button class="cinema_button">
-                    <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+            <a target=”_blank” href="https://www.guimet.fr/evenements/cinema/" aria-label="accéder aux évènements cinémas">
+                <button  name="link" class="cinema_button" aria-label="accéder aux évènements cinémas">
+                    <i class='bx bx-plus-circle'></i>
                 </button>  
             </a>  
     </article>
 
     <article>
         <div class="cinema">
-            <img src="./images/images_index/icone_spectacles.webp" alt="icone spectacle">
+            <img src="./images/images_index/icone_spectacles.webp" width="60"  height="60" alt="icone spectacle">
             <h3>Spectacles</h3>
         </div>
-        <a target=”_blank” href="https://www.guimet.fr/evenements/spectacles/">
-            <button class="cinema_button">
-                <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+        <a target=”_blank” href="https://www.guimet.fr/evenements/spectacles/" aria-label="accéder aux évènements spectacles">
+            <button  name="link" class="cinema_button" aria-label="accéder aux évènements spectacles">
+                <i class='bx bx-plus-circle'></i>
             </button>
         </a>
     </article>
 
     <article>
         <div class="cinema">
-            <img src="./images/images_index/icone_prix.webp" alt="icone prix">
+            <img src="./images/images_index/icone_prix.webp" width="60"  height="60" alt="icone prix">
             <h3 >Prix</h3>
         </div>
-        <a target=”_blank” href="https://www.guimet.fr/prix-litteraire/">
-            <button class="cinema_button">
-                <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+        <a target=”_blank” href="https://www.guimet.fr/prix-litteraire/" aria-label="accéder aux évènements prix">
+            <button  name="link" class="cinema_button" aria-label="accéder aux évènements Prix">
+                <i class='bx bx-plus-circle'></i>
             </button>  
         </a>
     </article>
 
     <article>
         <div class="cinema">
-            <img src="./images/images_index/icone_lecture.webp" alt="icone lectures">
+            <img src="./images/images_index/icone_lecture.webp" width="60"  height="60" alt="icone lectures">
             <h3>Lectures</h3>
         </div>
-        <a target=”_blank” href="https://www.guimet.fr/events/categorie/cycle-de-lectures/">
-            <button class="cinema_button">
-                <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+        <a target=”_blank” href="https://www.guimet.fr/events/categorie/cycle-de-lectures/" aria-label="accéder aux évènements lectures">
+            <button  name="link" class="cinema_button" aria-label="accéder aux évènements lectures">
+                <i class='bx bx-plus-circle'></i>
             </button>  
         </a>
 
     </article>
     <article>
         <div class="cinema">
-            <img src="./images/images_index/icone_rendez_vous.webp" alt="icone rendez vous">
+            <img src="./images/images_index/icone_rendez_vous.webp" width="60"  height="60" alt="icone rendez vous">
             <h3>Rendez-Vous</h3>
         </div>
-            <a target=”_blank” href="https://www.guimet.fr/evenements/rendez-vous/">
-                <button class="cinema_button">
-                    <img src="./images/images_index/bouton_plus.png" alt="icone plus">
+            <a target=”_blank” href="https://www.guimet.fr/evenements/rendez-vous/" aria-label="accéder aux évènements rendez vous">
+                <button  name="link" class="cinema_button" aria-label="accéder aux évènements rendez vous">
+                    <i class='bx bx-plus-circle'></i>
                 </button>  
             </a>
     </article>
     <div class="all-events-block">
 
-        <button class="all_events_button">
+        <button  name="link" class="all_events_button" aria-label="Découvrir tous les évènemments">
             <span>
                 Découvrir tous les évènemments
             </span>
 
-            <a href="https://www.guimet.fr/publications/autour-des-collections/" target="_blank"> 
+            <a href="https://www.guimet.fr/publications/autour-des-collections/" target="_blank" aria-label="accéder aux évènements"> 
                     <img src="./images/images_index/Flèche_bouton.webp" alt="flèche vers la droite">
             </a>
         </button> 
@@ -301,7 +315,7 @@
     
 <!-- NOS MUSEES  -->
 
-<section class="museum">
+<section id="musee" class="museum">
     <h2 class="wight">Nos musées</h2>*
 
     <article class="Guimet">
@@ -315,12 +329,13 @@
                 <p class="wight text-museum">Du vivant même d’Emile Guimet cette institution se <strong>consacra</strong> de plus en plus à l’Asie, tout en conservant une section sur les religions de l’ancienne Égypte, à la suite des expéditions dans diverses régions de l’Extrême-Orient.</p>
             </div>
         </div>
-        <a href="collection_himalaya.html#himalaya">
-            <button>En savoir plus <img src="./images/images_index/bouton_plus.png" alt="bouton plus"></button>
+        <a href="collection_himalaya.html#himalaya" aria-label="accéder au musée">
+            <button  name="link" aria-label="En savoir plus sur notre musée">En savoir plus <i class='bx bx-plus-circle'></i></button>
         </a>
     </article>
     <article>
         <div class="texte2">
+            <img src="./images/images_index/hotel_heildelbach_redi.webp" alt="hotel d'heildelbach">
             <div class="container-text-museum-right">
                 <h3 class="wight">Hôtel d'Heidelbach</h3>
                 <p class="wight text-museum"><strong>Alfred Samuel Heidelbach</strong> profite peu de sa résidence, il meurt en 1922. Une partie de ses collections est cédée au <strong>musée des Arts décoratifs</strong>, le reste est dispersé en <strong>vente publique</strong> après la mort de Julie Picard. <strong>Six cent cinq</strong> pièces rejoignent en 1934 le musée des Arts décoratifs, <strong>cent trente-neuf</strong> pièces chinoises et <strong>quarante-cinq</strong> d’origine européenne sont laissées aux héritiers.</p>
@@ -329,15 +344,14 @@
                 <p class="wight text-museum">Lors de la rénovation est <strong>inauguré</strong> le Panthéon bouddhique, souhaité par Émile Guimet, et en 2001, l’hôtel est enrichi d’un authentique Pavillon de thé dressé à l’arrière du bâtiment, dans le jardin de style japonais.
                 </p>
             </div>
-            <img src="./images/images_index/hotel_heildelbach.webp" alt="hotel d'heildelbach">
         </div>
-        <a href="collection_himalaya.html#himalaya">
-            <button>En savoir plus <img src="./images/images_index/bouton_plus.png" alt="bouton plus"></button>
+        <a href="collection_himalaya.html#himalaya" aria-label="accéder a l'hotel">
+            <button  name="link" aria-label="En savoir plus sur notre hotel">En savoir plus <i class='bx bx-plus-circle'></i></button>
         </a>
     </article>
     <article>
         <div class="texte3">
-            <img src="./images/images_index/image 66.webp" alt="musée d'ennery">
+            <img src="./images/images_index/musee_ennery_fin.webp"  alt="musée d'ennery">
             <div class="container-text-museum-right">
                 <h3 class="wight">Musée d'Ennery</h3>
                 <p class="wight text-museum">Le musée d’Ennery, situé au 59 de l’avenue Foch, anciennement avenue du Bois de Boulogne, constitue en lui-même le lieu d’une <strong>déclinaison spécifique</strong> de ce goût pour l’Extrême-Orient tel qu’il se manifeste en Europe au cours du dernier tiers du xixe siècle. </p>
@@ -345,8 +359,8 @@
                 <p class="wight text-museum">L’histoire qui y est évoquée, en un lieu bâti pour <strong>abriter ces collections</strong> singulières, dont nul ajout, par dispositions testamentaires, ne vint briser l’homogénéité, relève autant de l’histoire littéraire et de l’évolution du goût esthétique en France que de l’écriture d’une page précise de l’histoire de l’art.</p>
             </div>
         </div>
-        <a href="collection_himalaya.html#himalaya">
-            <button>En savoir plus <img src="./images/images_index/bouton_plus.png" alt="bouton plus"></button>
+        <a href="collection_himalaya.html#himalaya" aria-label="accéder au musée">
+            <button  name="link" aria-label="En savoir plus sur notre musée">En savoir plus <i class='bx bx-plus-circle'></i></button>
         </a>
     </article>       
 </section>
@@ -372,7 +386,7 @@
             <p>Tous les jours sauf le mardi, de 10h à 18h.</p>
 
             <h3>CONTACT :</h3>
-            <p>Tél. : <a target="_blank" href="tel:+33147235803"> 01 47 23 58 03</a></p>
+            <p>Tél. : <a target="_blank" href="tel:+33147235803" aria-label="01 47 23 58 03"> 01 47 23 58 03</a></p>
 
         </div>
 
@@ -415,10 +429,10 @@
             
         </div>
     </div>
-    <a target="_blank" href="https://www.guimet.fr/soutenir-le-musee/">
-        <button> 
+    <a target="_blank" href="https://www.guimet.fr/soutenir-le-musee/" aria-label="Nous Soutenir et devenir partenaire">
+        <button  name="link" aria-label="Nous Soutenir et devenir partenaire"> 
             <span>Nous Soutenir</span> 
-            <img src="./images/images_index/Flèche_bouton.webp" alt="flèche vers la droite">
+            <i class='bx bx-right-arrow-alt' ></i>
         </button>
     </a>
  </section>
@@ -427,7 +441,7 @@
 <!-- COMMENT S'Y RENDRE  -->
 
 <section>
-    <h2 >Comment s'y rendre</h2>
+    <h2  >Comment s'y rendre</h2>
     <div class="centermap">
         <div class="map-container">
             <div class="map">
@@ -465,7 +479,7 @@
 <!-- scrollUp -->
 
 <div id="scrollUp">
-    <a href="#"><img src="/images/images_index/scrollup.webp" alt="flèche vers le haut"/></a>
+    <a href="#" aria-label="remonter en haut"> <img src="/images/images_index/scrollup.webp" width="60"  height="60" alt="flèche vers le haut"/> </a>
 </div>
 
 
@@ -478,7 +492,7 @@
 
         <div class="row">
 
-            <div class="horraire">  <!--button-container-->
+            <div id="horaires" class="horraire">  <!--button-container-->
                 <h4>Horaires : </h4>
                 <br>
                 <p class="text-justify">L’Hôtel d’Heidelbach et Le Jardin Japonais sont ouverts tous les jours sauf le mardi, 
@@ -499,7 +513,7 @@
                     <p><b>Musée d'Ennery :</b></p>
                     <p>59, avenue Foch, 75116 Paris</p>
                     <br>
-                    <p><b>Information :</b> <a target="_blank" href="tel:+33156525433">01 56 52 54 33</a></p>
+                    <p><b>Information :</b> <a target="_blank" href="tel:+33156525433" aria-label="01 56 52 54 33">01 56 52 54 33</a></p>
                 </address>
 
                 <br>
@@ -525,14 +539,14 @@
             <div class="single-social">
                 <div class="content">
                 <p>Youtube</p>
-                <a class="youtube"  href="https://www.youtube.com/user/officielmuseeguimet" target="_blank"><i class="bx bxl-youtube"></i> </a>
+                <a class="youtube"  href="https://www.youtube.com/user/officielmuseeguimet" aria-label="Allez sur notre Youtube " target="_blank"><i class="bx bxl-youtube"></i> </a>
                 </div>
             </div>
 
             <div class="single-social"> 
                 <div class="content">
                 <p>Twitter</p>
-                <a class="twitter" href="https://twitter.com/museeguimet?lang=fr" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a class="twitter" href="https://twitter.com/museeguimet?lang=fr" aria-label="Allez sur notre Twitter " target="_blank"><i class="bx bxl-twitter"></i></a>
                 </div>
             </div>
 
@@ -540,27 +554,27 @@
             <div class="single-social">
                 <div class="content">
                 <p>Facebook</p>
-                <a class="facebook" href="https://www.facebook.com/museeguimet/" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a class="facebook" href="https://www.facebook.com/museeguimet/" aria-label="Allez sur notre Facebook " target="_blank"><i class="bx bxl-facebook"></i></a>
                 </div>
             </div>
 
             <div class="single-social">
                 <div class="content">
                 <p>Instagram</p>
-                <a class="instagram" href="https://www.instagram.com/museeguimet/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a class="instagram" href="https://www.instagram.com/museeguimet/" aria-label="Allez sur notre Instagram" target="_blank"> <i class="bx bxl-instagram"></i></a>
                 </div>
             </div>
 
             <div class="space">
-                <p><b>Tel :</b> <a target="_blank" href="Tél:+33156525433"> 01 56 52 54 33 </a> – Pour toutes demandes d’informations pratiques (de 10h à 18h les jours d’ouverture au public)</p>
+                <p><b>Tel :</b> <a aria-label="01 56 52 54 33" target="_blank" href="Tél:+33156525433"> 01 56 52 54 33 </a> – Pour toutes demandes d’informations pratiques (de 10h à 18h les jours d’ouverture au public)</p>
                 <br>
                 <p><b>Renseignements et réservations de groupes adultes ou scolaires :</b></p>
             
-                <p><a target="_blank" href="mailto:resa@guimet.fr">  resa@guimet.fr</a></p>
+                <p><a target="_blank" href="mailto:resa@guimet.fr" aria-label="resa@guimet.fr">  resa@guimet.fr</a></p>
                 <br>
                 <p><b>Informations concernant les activités individuelles : </b></p>
 
-                <p><a target="_blank" href="mailto:resa@guimet.fr">resa@guimet.fr</a></p>
+                <p><a target="_blank" href="mailto:resa@guimet.fr" aria-label="resa@guimet.fr">resa@guimet.fr</a></p>
             </div>
         </address>
     </div>
@@ -568,9 +582,9 @@
    
     <div class="bottom">
 
-        <img src="./images/images_index/Logo_musée_Guimet_footer.webp" alt="Logo du musée Guimet">
-        <a target="_blank" href="https://billetterie.guimet.fr/fr-FR/accueil">
-            <button class="billeterie">
+        <img src="./images/images_index/Logo_musée_Guimet_footer.webp"  width="70"  height="90"  alt="Logo du musée Guimet">
+        <a target="_blank" href="https://billetterie.guimet.fr/fr-FR/accueil" aria-label="billetterie">
+            <button  name="link" class="billeterie" aria-label="accéder à la billetterie">
                     billetterie
                 <img src="./images/images_index/Tickets.webp" alt="Tickets e la billeterie">
             </button>

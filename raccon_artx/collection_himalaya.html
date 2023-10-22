@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- meta description -->
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Le Musée Guimet est heureux de vous présenter sa collection himalaya">
     <title>Collection Himalaya</title>
+    <!-- CSS -->
     <link href="style/reset.css" rel="stylesheet" />
     <link href="./style/collection_himalaya.css" rel="stylesheet" /> 
+    <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./carroussel_collect.js"></script>
     <!-- boxicon -->
@@ -21,18 +23,18 @@
 <header>
     <div class="header_haut">
         <div class="search">
-            <img src="./images/images_index/loupe_recherche.png" alt="Loupe de recherche">
+            <img src="./images/images_index/loupe_recherche.webp" alt="Loupe de recherche">
             <input type="search" name="" id="search-input" placeholder="Recherche">
         </div>
-        <img src="./images/images_index/logo_musee_guimet.png" alt="logo du musée Guimet">
+        <img src="./images/images_index/logo_musee_guimet.webp" alt="logo du musée Guimet">
         <div class="droite">
-            <a href="x">
+            <a href="https://billetterie.guimet.fr/fr-FR/accueil">
                 <button class="billeterie_header">
                     billetterie
-                    <img src="./images/images_index/Tickets.png" alt="Ticket de billetterie">
+                    <img src="./images/images_index/Tickets.webp" alt="Ticket de billetterie">
                 </button>
-            </a>
-            <select name="langue">
+            </a> 
+            <select name="langue" aria-label="Langues">
                 <option value="fr">
                     FR
                 </option>
@@ -48,7 +50,7 @@
     <nav>
         <ul>
             <li>
-                <a target="_blank" href="index.html#menu">Musées</a>
+                <a target="_blank" href="index.html#musee">Musées</a>
             </li>
             <li>
                 <a href="#actu-1">Actualités</a>
@@ -65,14 +67,23 @@
 
 
 
+<!-- IMAGE SOUS HEADER -->
 
     <section> <!--Image entre le header et l'introduction-->
-        <img class="image-intro" src="./images/images_collection_himalaya/masque_baniere.png" alt="masque typique de la culture asiatique">
+        <img class="image-intro" src="./images/images_collection_himalaya/masque_baniere.webp" alt="masque typique de la culture asiatique">
             <h1 class="container-intro">Collection <span class="h1-color">Himalaya</span></h1>
     </section>
-    <section class="marges"> <!--Section de l'introduction de la page-->
-        <h2 class="h2-intro">Introduction</h2>
-            <div>
+
+
+
+<!-- INTRODUCTION -->
+
+
+    <section> <!--Section de l'introduction de la page-->
+
+        
+            <div class="marges">
+                <h2 class="h2-intro">Introduction</h2>
                 <div class="line"></div> <!--pour faire le trait horizontal-->
                     <p class="text-intro">Le domaine archéologique s’ouvre sur la <strong>période néolithique</strong> avec des <strong>jades</strong> et des <strong>céramiques</strong>, se poursuit avec des <strong>bronzes</strong> des 
                         dynasties Shang et Zhou, œuvres <strong>majeures</strong> auxquelles il convient d’ajouter d’importantes collections d’éléments de <strong>harnachement</strong> et de <strong>charrerie</strong>, 
@@ -92,82 +103,85 @@
                         <li class="space"><a target="_blank" href="https://www.guimet.fr/blog/un-destin-ernest-grandidier/" id="actu-1" class="lien">Découvrez les chefs d’oeuvres de  la collection Gandier </a></li>
                         <li class="space"><a target="_blank" href="https://www.guimet.fr/collections/documentation/bases-de-donnees/base-joconde/" id="actu-1" class="lien">Découvrez les peintures et sculptures sur la base JOCONDE</a></li>
                     </ul>
-                   
+              
+                    
+<!-- COLLECTION  -->
             </div>
             <section class="black-background marges-interior">
-                <img src="./images/images_collection_himalaya/Flèche_vers_le_haut.jpg" alt="Flèche verss le bas ">  <!-- ATTENTION MODIFIER IMAGE AVANT RENDU -->
+                <img class="flèche" src="./images/images_collection_himalaya/fleche_bas.png" alt="Flèche vers le bas ">  
                     <h2 class="white h2-Collection">Découvrez la collection</h2>
-                    <div>
-                        <div class="premscase">
-                            <div>
-                                <div class="image-container">
-                                <img src="./images/images_collection_himalaya/reine_Maya.png" alt="reine Maya ">
-                                <div class="overlay-text">your text here</div>
-                                
+                <div>
+                    <div class="premscase ">
+                        <div class="image-container">
+                            <div class="fond-flou"></div> <!--rectangle flou dans l'image-->
+                            <img src="./images/images_collection_himalaya/reine_Maya.webp" alt="reine Maya ">
+                            <p class="white overlay-text"> La reine maya donnant naissance au futur bouddha</p>
+                        </div>
+                        <div class="image-container">
+                            <img src="./images/images_collection_himalaya/Manjushrî.webp" alt="Manjushrî">
+                            <div></div> <!--rectangle flou dans l'imge-->
+                            <p class="white overlay-text">Manjushrî</p>
+                        </div>  
+                    </div>
+
+                    <div class="deumscase">
+                        <div class="image-container">
+                            <img src="./images/images_collection_himalaya/Masque_de_Bhairava.webp" alt="Masque de Bhairava">
+                            <div></div> <!--rectangle flou dans l'image-->
+                            <p class="white overlay-text">Masque de Bhairava</p>
+                        </div>
+                    <div class="troimscase">
+                        <div class="image-container">
+                            <img src="./images/images_collection_himalaya/Vajrapâni.webp" alt="Vajrapâni">
+                            <div></div> <!--rectangle flou dans l'image-->
+                            <p class="white overlay-text">Vajrapâni</p>
+                        </div>
+                        <div class="image-container">
+                            <img src="./images/images_collection_himalaya/Virûpaksa.webp" alt="Virûpaksa">
                                 <div></div> <!--rectangle flou dans l'image-->
-                                    <p class="white"></p>
-                                </div>
+                                <p class="white overlay-text">Virûpaksa</p>
                         </div>
-                        <div>
-                            <img src="./images/images_collection_himalaya/Manjushrî.jpg" alt="Manjushrî">
-                                <div></div> <!--rectangle flou dans l'imge-->
-                                    <p class="white"></p>
+                    </div>
+                    <div class="quatroscase">
+                        <div class="image-container">
+                            <img src="./images/images_collection_himalaya/Hevajra_Nairâtmya.webp" alt="Hevajra et Nairâtmya">
+                            <div></div> <!--rectangle flou dans l'image-->
+                            <p class="white overlay-text">Hevajra et Nairâtmya</p>
                         </div>
+                    </div>
+                    <div class="cinquocase">
+                        <div class="image-container">
+                            <img src="./images/images_collection_himalaya/Bouddha_Usnîsavijayâ.webp" alt="Bouddha Usnîsavijayâ">
+                            <div></div> <!--rectangle flou dans l'image-->
+                            <p class="white overlay-text">Bouddha Usnîsavijayâ</p>
                         </div>
-                        <div class="deumscase">
-                        <div>
-                            <img src="./images/images_collection_himalaya/Masque_de_Bhairava.jpg" alt="Masque de Bhairava">
-                                <div></div> <!--rectangle flou dans l'image-->
-                                    <P></P>
+                        <div class="image-container">
+                            <img src="./images/images_collection_himalaya/Bouddha_Padmasambhava.webp" alt="Bouddha Padmasambhava">
+                            <div></div> <!--rectangle flou dans l'image-->
+                            <p class="white overlay-text">Bouddha Padmasambhava</p>
                         </div>
+                        <div class="image-container">
+                            <img src="./images/images_collection_himalaya/Vajrâmrita.webp" alt="Vajrâmrita">
+                            <div></div> <!--rectangle flou dans l'image-->
+                            <p class="white overlay-text">Vajrâmrita</p>
                         </div>
-                        <div class="troimscase">
-                        <div>
-                            <img src="./images/images_collection_himalaya/Vajrapâni.jpg" alt="Vajrapâni">
-                                <div></div> <!--rectangle flou dans l'image-->
-                                    <P class="white"></P>
-                        </div>
-                        <div>
-                            <img src="./images/images_collection_himalaya/Virûpaksa.jpg" alt="Virûpaksa">
-                                <div></div> <!--rectangle flou dans l'image-->
-                                    <P class="white"></P>
-                        </div>
-                        </div>
-                        <div class="quatroscase">
-                        <div>
-                            <img src="./images/images_collection_himalaya/Hevajra_Nairâtmya.jpg" alt="Hevajra et Nairâtmya">
-                                <div></div> <!--rectangle flou dans l'image-->
-                                    <P class="white"></P>
-                        </div>
-                        </div>
-                        <div class="cinquocase">
-                        <div>
-                            <img src="./images/images_collection_himalaya/Bouddha_Usnîsavijayâ.jpg" alt="Bouddha Usnîsavijayâ">
-                                <div></div> <!--rectangle flou dans l'image-->
-                                    <P class="white"></P>
-                        </div>
-                        <div>
-                            <img src="./images/images_collection_himalaya/Bouddha_Padmasambhava.jpg" alt="Bouddha Padmasambhava">
-                                <div></div> <!--rectangle flou dans l'image-->
-                                    <P class="white"></P>
-                        </div>
-                        <div>
-                            <img src="./images/images_collection_himalaya/Vajrâmrita.jpg" alt="Vajrâmrita">
-                                <div></div> <!--rectangle flou dans l'image-->
-                                    <P class="white"></P>
-                        </div>
-                        </div>
-                        <h2 class="white">Visiter notre musée</h2>
-                        <a href="https://billetterie.guimet.fr/fr-FR/accueil">
-                            <button>
+                    </div>
+                    <h2 class="white">Visiter notre musée</h2>
+                        <a target="_blank" href="https://billetterie.guimet.fr/fr-FR/accueil">
+                            <button class="billeterie_header">
                                 billetterie           <!--Bouton billetterie-->
-                                <img src="./images_collection_himalaya/Tickets.png" alt="Tickets de la billeterie">
+                                <img src="./images/images_collection_himalaya/Tickets.webp" alt="Tickets de la billeterie">
                             </button>
                         </a>
-                    </div> 
-            </section>
+                </div>
+    </section>
+
+
+<!-- AUTRESS COLLECTION, SUPPRIME APRES REFLEXION -->
+
+
     <!-- a integrer dans la partie "autre collection" -->
-    <main>
+    <!-- <main>
 
         <div id="carousel">
 
@@ -209,27 +223,14 @@
             <i class='bx bx-chevron-right' ></i>
         </button>
         </div>
-</section>
+    </main> -->
 </body>
 </html>
-      <!-- scrollUP -->
 
-    <!-- <script>
-        jQuery(function(){
-            $(function () {
-                $(window).scroll(function () { //Fonction appelée quand on descend la page
-                    if ($(this).scrollTop() > 100 ) {  // Quand on est à 100pixels du haut de page,
-                        $('#scrollUp').css('opacity','100'); // Replace à 10pixels de la droite l'image
-                    } else { 
-                        $('#scrollUp').removeAttr( 'style' ); // Enlève les attributs CSS affectés par javascript
-                    }
-                });
-            });
-        });
-        </script> -->
+<!-- scrollUP -->
 
         <div id="scrollUp">
-            <a href="#"><img src="./images_collection_himalaya/Flèche_vers_le_haut.jpg" alt="flèche vers le haut"   style="width: auto;
+            <a href="#"><img src="./images/images_index/scrollup.webp" alt="flèche vers le haut"   style="width: auto;
                 height: 35px;"/></a>
             </div>
         <!-- fin sroll up  -->
@@ -291,14 +292,14 @@
             <div class="single-social">
                 <div class="content">
                 <p>Youtube</p>
-                <a class="youtube" href="https://www.youtube.com/user/officielmuseeguimet" target="_blank"><i class="bx bxl-youtube"></i> </a>
+                <a class="youtube"  href="https://www.youtube.com/user/officielmuseeguimet" aria-label="Allez sur notre Youtube " target="_blank"><i class="bx bxl-youtube"></i> </a>
                 </div>
             </div>
 
             <div class="single-social"> 
                 <div class="content">
                 <p>Twitter</p>
-                <a class="twitter" href="https://twitter.com/museeguimet?lang=fr" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a class="twitter" href="https://twitter.com/museeguimet?lang=fr" aria-label="Allez sur notre Twitter " target="_blank"><i class="bx bxl-twitter"></i></a>
                 </div>
             </div>
 
@@ -306,14 +307,14 @@
             <div class="single-social">
                 <div class="content">
                 <p>Facebook</p>
-                <a class="facebook" href="https://www.facebook.com/museeguimet/" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a class="facebook" href="https://www.facebook.com/museeguimet/" aria-label="Allez sur notre Facebook " target="_blank"><i class="bx bxl-facebook"></i></a>
                 </div>
             </div>
 
             <div class="single-social">
                 <div class="content">
                 <p>Instagram</p>
-                <a class="instagram" href="https://www.instagram.com/museeguimet/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a class="instagram" href="https://www.instagram.com/museeguimet/" aria-label="Allez sur notre Instagram" target="_blank"> <i class="bx bxl-instagram"></i></a>
                 </div>
             </div>
 
@@ -334,11 +335,11 @@
    
     <div class="bottom">
 
-        <img src="./images/images_index/Logo_musée_Guimet_footer.png" alt="Logo du musée Guimet">
+        <img src="./images/images_index/Logo_musée_Guimet_footer.webp" alt="Logo du musée Guimet">
         <a  href="https://billetterie.guimet.fr/fr-FR/accueil">
             <button class="billeterie">
                     billetterie
-                <img src="./images/images_index/Tickets.png" alt="Tickets e la billeterie">
+                <img src="./images/images_index/Tickets.webp" alt="Tickets e la billeterie">
             </button>
         </a>
         <span class="invisible"></span>
